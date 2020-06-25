@@ -1,5 +1,7 @@
-node {
-    sh'''
-    gcloud config configurations list
-    '''
+node ('node') {
+    stage ('Begin') {
+        sh'''
+        gcloud config configurations list
+        '''
+    }
 }
