@@ -1,6 +1,6 @@
-def returnVar(String a, String b) {
-    sh'''
-    gcloud a configurations b
+def returnVar(String a) {
+    echo'''
+    gcloud config configurations a
     '''
 } 
 
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage ('Bash') {
             steps {
-                returnVar("config, list")
+                returnVar("list")
             }
         }
     }
