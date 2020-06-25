@@ -1,10 +1,11 @@
 pipeline {
-    stages('Create variable') {
-        steps {
-            sh'''
-            gcloud config configurations list
-            '''
+    stages('Begin') {
+        stage ('Gcloud') {
+            steps {
+                sh'''
+                gcloud config configurations list
+                '''
+            }
         }
-
     }
 }
