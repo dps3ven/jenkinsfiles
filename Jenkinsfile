@@ -1,6 +1,6 @@
 def returnVar(String a, String b) {
     echo'''
-    gcloud a configurations b
+    gcloud $a configurations $b
     '''
 } 
 
