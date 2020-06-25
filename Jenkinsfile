@@ -1,11 +1,18 @@
-node ('master') {
-    stage ('Bash') {
-        script {
-            returnVar("hello world")
+pipeline {
+    aget {
+        label 'master'
+    }
+    stages {
+        stage ('Bash') {
+            script {
+                returnVar("list")
+            }
         }
     }
 }
 
 def returnVar(String a) {
-    echo a
+    sh'''
+    gcloud config configurations a
+    '''
 } 
