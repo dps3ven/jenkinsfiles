@@ -1,8 +1,8 @@
 def returnVar(String a, String b) {
-    sh'''
+    sh"""
     ls /tmp
     gcloud $a configurations $b
-    '''
+    """
 } 
 
 pipeline {
