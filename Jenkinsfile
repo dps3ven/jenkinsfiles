@@ -1,11 +1,11 @@
-void returnVar() {
-    echo "Hello World"
-} 
-
 node ('master') {
     stage ('Bash') {
-        sh'''
-        returnVar()
-        '''
+        script {
+            returnVar("hello world")
+        }
     }
 }
+
+def returnVar(String a) {
+    echo a
+} 
