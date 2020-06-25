@@ -1,5 +1,5 @@
 pipeline {
-    aget {
+    agent {
         label 'master'
     }
     stages {
