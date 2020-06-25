@@ -1,7 +1,11 @@
+def returnVar() {
+    echo "Hello World"
+} 
+
 node ('master') {
-    stage ('Begin') {
+    stage ('Bash') {
         sh'''
-        gcloud config configurations list
+        returnVar()
         '''
     }
 }
