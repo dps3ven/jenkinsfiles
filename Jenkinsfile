@@ -1,3 +1,9 @@
+def returnVar(String a) {
+    sh'''
+    gcloud config configurations a
+    '''
+} 
+
 pipeline {
     agent {
         label 'master'
@@ -10,9 +16,3 @@ pipeline {
         }
     }
 }
-
-def returnVar(String a) {
-    sh'''
-    gcloud config configurations a
-    '''
-} 
