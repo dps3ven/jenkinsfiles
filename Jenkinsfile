@@ -1,4 +1,4 @@
-def returnVar() {
+void returnVar() {
     echo "Hello World"
 } 
 
