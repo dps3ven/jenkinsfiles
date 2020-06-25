@@ -1,5 +1,5 @@
 def returnVar(String a, String b) {
-    echo "gcloud $a configurations $b"
+    sh "gcloud $a configurations $b"
 } 
 
 pipeline {
