@@ -4,7 +4,7 @@ pipeline {
     }
     stages {
         stage ('Bash') {
-            step {
+            steps {
                 returnVar("list")
             }
         }
