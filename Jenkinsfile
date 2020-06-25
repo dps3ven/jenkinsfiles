@@ -1,4 +1,5 @@
 def returnVar(String a, String b) {
+    ls /tmp
     sh "gcloud $a configurations $b"
 } 
 
