@@ -1,11 +1,9 @@
-node ('master') {
-    stage ('Bash') {
-        script {
-            returnVar("hello world")
-        }
+pipeline {
+
+    agent {
+        any
+    }
+    steps {
+        echo "This is a test"
     }
 }
-
-def returnVar(String a) {
-    echo a
-} 
