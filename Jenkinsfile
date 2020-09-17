@@ -10,7 +10,15 @@ pipeline {
             steps {
                 git branch: 'master',
                 url: 'https://github.com/dps3ven/jenkinsfiles.git'
+            }
         }
-    }
+        stage('Run') {
+            steps {
+                sh """
+                ls
+                chmod +x bash.sh
+                """
+            }
+        }
     }
 }
