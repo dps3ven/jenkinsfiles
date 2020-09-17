@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        any
-    }
+    agent any
     stages("Test") {
         stage("Echo") {
             steps {
