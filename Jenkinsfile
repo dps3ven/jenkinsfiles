@@ -17,6 +17,7 @@ pipeline {
                 sh """
                 ls
                 chmod +x bash.sh
+                ./bash.sh
                 """
             }
         }
