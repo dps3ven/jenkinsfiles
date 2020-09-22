@@ -28,7 +28,6 @@ pipeline {
                 sh """
                 ls
                 chmod +x bash.sh
-                apt-get update && sudo apt-get install google-cloud-sdk
                 ./bash.sh
                 """
             }
