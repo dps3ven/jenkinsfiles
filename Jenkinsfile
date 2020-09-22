@@ -1,9 +1,18 @@
+def returnVar(String a) {
+    echo a
+}
+
 pipeline {
     agent any
     stages("Test") {
         stage("Echo") {
             steps {
                 echo "This is a test"
+            }
+        }
+        stage ('Return Variable') {
+            script {
+                returnVar("hello world")
             }
         }
         stage('Checkout') {
@@ -23,3 +32,4 @@ pipeline {
         }
     }
 }
+
