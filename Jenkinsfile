@@ -28,6 +28,7 @@ pipeline {
                 sh """
                 ls
                 chmod +x bash.sh
+                gcloud config configurations list
                 ./bash.sh
                 """
             }
