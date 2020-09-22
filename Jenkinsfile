@@ -11,8 +11,10 @@ pipeline {
             }
         }
         stage ('Return Variable') {
-            script {
-                returnVar("hello world")
+            steps {
+                script {
+                    returnVar("hello world")
+                }
             }
         }
         stage('Checkout') {
